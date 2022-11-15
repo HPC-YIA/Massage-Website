@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Booking</title>
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,900;1,500&display=swap" rel="stylesheet">
+  <!-- css stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles2.css">
+  <!-- bootstrap script -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+
+
+  <section id="loginpage">
+    <div class="nav-container-appointment">
+
+
+
+      <nav class="navbar navbar-expand-md">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggle-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">HEALTHY CARE</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about-us">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/service">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/myaccount-show-appointment">MY ACCOUNT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/feedback">FEEDBACK</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="loginform">
+      <a href="#" class="button" id="showlogin">LOG INTO YOUR ACCOUNT</a>
+    </div>
+
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+
+      <div class="form">
+        <form id="login-form-popup" action="my-account.html" method="post" name="form">
+          <h2>Log in</h2>
+          <div class="form-element">
+            <input type="email" id="email" name="email" placeholder="Email address">
+          </div>
+          <div class="form-element">
+            <input type="password" id="pwd" name="pwd" placeholder="Password">
+          </div>
+          <div class="form-element">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+          </div>
+          <div class="form-element">
+            <button type="submit" id="btn-submit" onclick="window.location='my-account.html';">Sign in</button>
+          </div>
+          <div class="form-element">
+            <a href="#">Forget Password</a>
+          </div>
+          <div class="form-element">
+            <p class="register">Don't have an account?</p><a href="#">Register</a>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </section>
+  <section id="booking-bg-page">
+    <form class=whole-appointmet action="/users" method="post">
+      <div class="booking-container">
+        <div class="selection">
+          <button class="btn" id="type-popup"> Select Type</button>
+        </div>
+
+        <div class="selection">
+          <button class="btn"> Select Date</button>
+        </div>
+
+        <div class="selection">
+          <button class="btn"> Select Therapist</button>
+        </div>
+
+        <div class="selection">
+          <button class="btn"> Select Time</button>
+        </div>
+
+
+        <div class="bookingtype-popup">
+          <!-- <div class="close-btn">&times;</div> -->
+
+          <form id="booking-form-popup">
+            <div class="book-element">
+              <h3 class="type-title">SELECT APPOINTMENT TYPE</h3>
+            </div>
+            <div class="book-element">
+
+              <select name="select1" id="select-type" onchange="showTimePeriod('select-type','select-time')">
+                <option value="no available">
+
+                </option>
+                <option value="30 mins upper body remedial massage">
+                  30 mins upper body remedial massage
+                </option>
+                <option value="45 mins whole body remedial massage">
+                  45 mins whole body remedial massage
+                </option>
+                <option value="60 mins whole body remedial massage">
+                  60 mins whole body remedial massage
+                </option>
+                <option value="90 mins whole body remedial massage">
+                  90 mins whole body remedial massage
+                </option>
+                <option value="120 mins whole body remedial massage">
+                  120 mins whole body remedial massage
+                </option>
+                <option value="30-mins-foot">
+                  30 mins foot reflexology massage
+                </option>
+
+              </select>
+
+
+            </div>
+            <!-- <div class="book-element">
+              <button class="continue-btn" id="con-btn"> Continue -> </button>
+            </div> -->
+          </form>
+        </div>
+
+
+        <div class="bookingstaff-popup">
+          <!-- <div class="close-btn">&times;</div> -->
+
+          <!-- <form id="staff-form-popup"> -->
+          <div class="staff-element">
+            <h3 class="staff-title">SELECT THERAPIST</h3>
+          </div>
+
+          <div class="staff-element">
+            <!-- <h4 class="staff-label">Therapists: </h4> -->
+
+            <select name="selecttherapist" id="select-staff">
+              <option value="No Preference">No Preference</option>
+              <option style="display:none;" value="Jane">
+                Jane
+                <p>
+                  Available : Fri, Sat, Sun
+                </p>
+              </option>
+              <option style="display:none;" value="Mary">
+                Mary
+                <p>
+                  Available : Mon, Wed, Fri
+                </p>
+              </option>
+              <option style="display:none;" value="Apple">
+                Apple
+                <p>
+                  Available : Tue, Wed, Thu
+                </p>
+              </option>
+              <option style="display:none;" value="Sunny">
+                Sunny
+                <p>
+                  Available : Mon, Thu, Sat, Sun
+                </p>
+              </option>
+
+
+
+            </select>
+
+
+          </div>
+          <!-- </form> -->
+        </div>
+
+        <div class="bookingdate-popup">
+          <!-- <div class="close-btn">&times;</div> -->
+
+          <!-- <form id="date-form-popup"> -->
+          <div class="date-element">
+            <h3 class="date-title">SELECT DATE</h3>
+          </div>
+          <div class="date-element">
+            <input name="dateconfirm" class="date-form-control" id="select-date" type="date" placeholder="Select Date" onchange="showdate(this.value)">
+          </div>
+          <!-- </form> -->
+        </div>
+
+        <div class="bookingtime-popup">
+          <!-- <div class="close-btn">&times;</div> -->
+
+          <!-- <form id="date-form-popup"> -->
+          <div class="time-element">
+            <h3 class="time-title">SELECT TIME</h3>
+          </div>
+          <div class="time-element">
+            <select type="text" name="select2" id="select-time">
+              <option value="No Available"> No Available</option>
+
+            </select>
+          </div>
+          <!-- </form> -->
+        </div>
+        <button class="submit-appointmet-btn" type="submit" name="button">Submit</button>
+
+      </div>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+
+</body>
+<script src="/javascripts/scripts.js">
+
+</script>
+
+</html>
