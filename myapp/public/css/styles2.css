@@ -1,0 +1,870 @@
+body {
+  font-family: 'Montserrat';
+}
+
+#title {
+  background-color: white;
+}
+
+.container-fluid {
+  padding: 1% 10%;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #937DC2;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 450;
+}
+
+.mainad {
+  padding: 1%;
+}
+
+h2 {
+  color: #937DC2;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.navbar {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+}
+
+.navbar-brand {
+  font-weight: 500;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.cart-icon{
+  padding-top: 4px;
+}
+.location-booking {
+  padding: 1% 10%;
+  text-align: center;
+  background-color: #FFE6F7;
+}
+
+.card-header {
+  background-color: #937DC2;
+  color: white;
+}
+
+.btn {
+  background-color: #937DC2;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+#product-booking {
+  background-color: #FFE6F7;
+}
+
+.shop-container {
+  padding: 1% 10%;
+  margin-bottom: 20%;
+}
+
+.shop-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #937DC2;
+  padding: 20px 0 20px;
+}
+
+.shop-content {
+  display: grid;
+  height: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 350px;
+  column-gap: 20px;
+  text-align: center;
+}
+
+.shop-content .product-img {
+  width: 350px;
+  height: 250px;
+}
+
+.product-box {
+  position: relative;
+}
+
+.product-box:hover {
+  padding: 20px;
+  border: 1px solid;
+  transition: 0.4s;
+}
+
+.product-title {
+  margin: 10px;
+  ;
+}
+
+.shop-content .Purchase {}
+
+/* cart */
+.cart {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 360px;
+  min-height: 100vh;
+  padding: 20px;
+  background: white;
+  box-shadow: -2px 0 4px hsl(0, 4%, 15%/ 10%);
+  transition: 0.3s;
+}
+
+.cart.active{
+  right:0
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #937DC2;
+}
+
+.cart-box .product-img {
+  height: 100px;
+  width: 100px;
+  padding-left: 10px;
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cart-quantity {
+  width: 2.4rem;
+  text-align: center;
+}
+
+.cart-remove {
+  cursor: pointer;
+  color: #937DC2;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid;
+}
+
+.total-title {
+  font-size: 1rem;
+  font-weight: 510;
+}
+
+.total-price {
+  margin-left: 0.5rem;
+}
+
+.btn-buy {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 8px 20px;
+  background-color: #937DC2;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn-buy:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+#close-cart{
+  position:absolute;
+  top:1rem;
+  right:0.8rem;
+  font-size: 1rem;
+  cursor:pointer;
+}
+
+
+.vouchertitle {
+  text-align: center;
+}
+
+.vouchertitle {
+  color: #D8EFF0;
+  /* padding-bottom: 300px; */
+}
+
+.voucher {
+  text-align: center;
+  background-color: #ADCF9F;
+}
+
+.onehrvoucher {
+  border-style: solid;
+  border-color: white;
+  background-color: #D8EFF0;
+  text-align: center;
+  width: 160px;
+  height: 200px;
+  line-height: 30px;
+}
+
+.thirtyminsvoucher {
+  border-style: solid;
+  border-color: white;
+  background-color: #D8EFF0;
+  width: 160px;
+  height: 200px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.fortyfivevoucher {
+  border-style: solid;
+  border-color: white;
+  background-color: #D8EFF0;
+  width: 160px;
+  height: 200px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.sistyvoucher {
+  border-style: solid;
+  border-color: white;
+  background-color: #D8EFF0;
+  width: 160px;
+  height: 200px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.Familyvoucher {
+  border-style: solid;
+  border-color: white;
+  background-color: #D8EFF0;
+  width: 160px;
+  height: 200px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.coulevoucher {
+  border-style: solid;
+  border-color: white;
+  background-color: #D8EFF0;
+  width: 160px;
+  height: 200px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.Purchase {
+  background-color: #937DC2;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.Purchase:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+/* booking page  */
+.nav-container-appointment {
+  padding: 1% 15%;
+}
+
+.loginform {
+  padding: 1% 20%;
+  text-align: right;
+}
+
+.loginform a {
+  text-decoration: none;
+}
+
+.popup {
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  background: white;
+  display: none;
+  width: 500px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.popup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  background-color: #888;
+  border-radius: 15px;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+.popup .form {
+  width: 250%;
+  max-width: 500px;
+  padding: 1.5rem 3rem;
+  text-align: center;
+}
+
+.popup .form h2 {
+  text-align: center;
+  margin: auto;
+}
+
+.popup .form .form-element {
+  margin: 15px 0px;
+}
+
+.popup .form .form-element button {
+  width: 200px;
+  height: 40px;
+  background-color: #937DC2;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.popup .form .form-element button:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+#booking-bg-page {
+  align-content: center;
+  margin: 0 10%;
+}
+
+.booking-container {
+  padding: 50px 160px 20px 120px;
+  height: 1500px;
+  background-color: #FFE6F7;
+  border-radius: 10px;
+}
+
+.selection {
+  display: block;
+  padding-bottom: 170px;
+  display: none;
+}
+
+.selection .btn {
+  width: 200px;
+  height: 40px;
+  background-color: #937DC2;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.selection .button:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+.bookingtype-popup {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  width: 100px;
+  height: 180px;
+  text-align: center;
+  background: white;
+  display: block;
+  width: 500px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookingtype-popup:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+.type-title {
+  margin-bottom: 40px;
+  color: #937DC2;
+}
+
+.bookingtype-popup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  background-color: #888;
+  border-radius: 15px;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+.bookingtype-popup .continue-btn {
+  width: 200px;
+  margin-top: 15px;
+  background-color: #937DC2;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.bookingtype-popup .continue-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+.bookingstaff-popup {
+  position: absolute;
+  top: 95%;
+  left: 35%;
+  width: 100px;
+  height: 180px;
+  text-align: center;
+  background: white;
+  display: block;
+  width: 500px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookingstaff-popup:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+.staff-element {
+  display: block;
+}
+
+.staff-title {
+  margin-bottom: 40px;
+  color: #937DC2;
+  text-align: center;
+}
+
+.bookingdate-popup {
+  position: absolute;
+  top: 65%;
+  left: 35%;
+  width: 100px;
+  height: 180px;
+  text-align: center;
+  background: white;
+  display: block;
+  width: 500px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookingdate-popup:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+.date-element {
+  display: block;
+}
+
+.date-title {
+  margin-bottom: 40px;
+  color: #937DC2;
+  text-align: center;
+}
+
+/* //time slot */
+.bookingtime-popup {
+  position: absolute;
+  top: 125%;
+  left: 35%;
+  width: 100px;
+  height: 180px;
+  text-align: center;
+  background: white;
+  display: block;
+  width: 500px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookingtime-popup:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+.time-element {
+  display: block;
+}
+
+.time-title {
+  margin-bottom: 40px;
+  color: #937DC2;
+  text-align: center;
+}
+
+/* //submit button */
+.submit-appointmet-btn{
+  width: 200px;
+  margin-top: 1000px;
+  margin-left: 400px;
+  background-color: #937DC2;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+  align-self: center;
+
+}
+.submit-appointmet-btn:hover{
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+/* myccount */
+.profile-container {
+  margin: 0 10%;
+  padding: 50px 160px 20px 120px;
+  height: 1500px;
+  background-color: #FFE6F7;
+  border-radius: 10px;
+}
+
+.nav-container-myaccount {
+  padding: 1% 15%;
+}
+
+.account-container {
+  padding-bottom: 50px;
+}
+
+.username {
+  margin-left: 10px;
+}
+
+/* button */
+.change-pwd {
+  width: 200px;
+  margin-top: 15px;
+  margin-right: 10px;
+  background-color: #937DC2;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.change-pwd:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+.contact-details {
+  width: 200px;
+  margin-top: 15px;
+  margin-right: 10px;
+  background-color: #937DC2;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.contact-details:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+.logout {
+  width: 200px;
+  margin-top: 15px;
+  margin-right: 10px;
+  background-color: #937DC2;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.logout:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+.reward-container {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.reward-title {
+  border-bottom: solid;
+  border-bottom-width: thin;
+}
+
+.reward-title .myreward {
+  display: inline-block;
+  color: #937DC2;
+  padding-left: 10px;
+}
+
+.reward-title .reward-pts {
+  display: inline-block;
+  color: #937DC2;
+  padding-left: 350px;
+  font-size: 15px;
+}
+
+.reward-container .row {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
+
+/* appointment */
+.appointment-container {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.appointment-container .appointment-title .myappointment {
+  padding-left: 10px;
+  color: #937DC2;
+}
+
+.appointment-title {
+  border-bottom: solid;
+  border-bottom-width: thin;
+}
+
+/* order */
+.order-container {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.myorder {
+  padding-left: 10px;
+  color: #937DC2;
+}
+
+.order-title {
+  border-bottom: solid;
+  border-bottom-width: thin;
+}
+.table {font-size: 13px;}
+/* about us page */
+.nav-container-aboutus {
+  padding: 1% 15%;
+}
+
+.aboutus-container {
+  margin: 0 10%;
+  padding: 50px 160px 20px 120px;
+  height: 1500px;
+  background-color: #FFE6F7;
+  border-radius: 10px;
+}
+
+.business-info{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  width:1000px;
+  padding:0 100px;
+
+}
+.business-img{
+  width: 500px;
+  height: 300px;
+}
+.business-detail{
+  width: 500px;
+  height: 350px;
+  background-color: white;
+
+}
+.info-title{
+  text-align: center;
+  padding: 50px 20px;
+
+}
+.info-content{
+  text-align: center;
+  padding: 10px 100px;
+  color:#937DC2;
+}
+.info-paragraph{
+  color:#937DC2;
+  text-align: center;
+  padding: 0px 30px;
+}
+.business-img2{
+
+ padding-top: 50px;
+  width:500px;
+  height:400px;
+}
+/* services page */
+.nav-container-service {
+  padding: 1% 15%;
+}
+
+.service-container {
+  margin: 0 10%;
+  padding: 50px 160px 20px 120px;
+  height: 1500px;
+  background-color: #FFE6F7;
+  border-radius: 10px;
+}
+.service-info{
+  display:grid;
+  grid-template-columns:35% 65%;
+}
+.service-img{
+  width:500px;
+  height:800px;
+}
+.service-detail{
+  background-color: white;
+}
+
+.service-title{
+  color:#937DC2;
+  text-align: center;
+  padding: 50px 30px;
+}
+.service-type{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  text-align: center;
+  color:#937DC2;
+  padding-bottom: 30px;
+}
+
+/* services page */
+.nav-container-feedback {
+  padding: 1% 15%;
+}
+
+.feedback-container {
+  margin: 0 10%;
+  padding: 50px 200px 160px;
+  height: 1500px;
+  background-color: #FFE6F7;
+  border-radius: 10px;
+
+}
+.feedback-form{
+  width:1100px;
+  padding-left:190px;
+  padding-right:190px;
+  border-style:ridge;
+  border-color: white;
+  background-color: white;
+
+}
+.form-content{
+
+  padding: 70px 100px 100px 0px;
+}
+
+.form-title{
+  text-align: center;
+}
+.feedback-form-btn{
+  background-color: #937DC2;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .3s;
+  width:200px;
+  align-self: center;
+
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+}
